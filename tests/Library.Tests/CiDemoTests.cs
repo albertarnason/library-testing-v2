@@ -4,7 +4,7 @@ namespace Library.Tests;
 public class CiDemoTests
 {
     [TestMethod]
-    public void Addition_ToPlusTo_GiverFem()
+    public void Addition_ToPlusTo_GiverFire()
     {
         // Arrange
         var a = 2;
@@ -14,6 +14,6 @@ public class CiDemoTests
         var sum = a + b;
 
         // Assert
-        Assert.AreEqual(5, sum);
+        Assert.AreEqual(4, sum);
     }
 }
