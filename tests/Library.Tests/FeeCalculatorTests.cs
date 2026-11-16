@@ -35,4 +35,14 @@ public class FeeCalculatorTests
 
         Assert.AreEqual(5m, fee);
     }
+
+    [TestMethod]
+    public void Calculate_TiDageForSent_Returnerer50()
+    {
+        var returned = new DateTime(2026, 12, 10);
+
+        decimal fee = _calculator.Calculate(_due, returned);
+
+        Assert.AreEqual(50m, fee);
+    }
 }
